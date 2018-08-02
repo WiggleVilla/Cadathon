@@ -1,0 +1,55 @@
+@import url(./vnav.desktop.css) only screen and (min-width: 1361px);
+@import url(./vnav.mobile.css) only screen and (max-width: 1360px);
+
+.vnav
+{
+    z-index: 100;
+}
+
+.vnav-item-vex
+{
+    background-color: #8a8a8d;
+    background-image: url(../images/vnav/vex/home.svg);
+}
+
+.vnav-item-iq
+{
+    background-color: #2374bb;
+    background-image: url(../images/vnav/vex/iq.svg);
+}
+
+.vnav-item-edr
+{
+    background-color: #d9272e;
+    background-image: url(../images/vnav/vex/edr.svg);
+}
+
+.vnav-item-pro
+{
+    background-color: #00953a;
+    background-image: url(../images/vnav/vex/pro.svg);
+}
+
+.vnav-item-twitter
+{
+    background-color: #5fa9dd;
+    background-image: url(../images/vnav/twitter.svg);
+}
+
+.vnav-item-instagram
+{
+    background-color: #b3b2b1;
+    background-image: url(../images/vnav/instagram.svg);
+}
+
+.vnav-item-youtube
+{
+    background-color: #cd2127;
+    background-image: url(../images/vnav/youtube.svg);
+}
+
+.vnav-item-facebook
+{
+    background-color: #3c5a99;
+    background-image: url(../images/vnav/facebook.svg);
+}

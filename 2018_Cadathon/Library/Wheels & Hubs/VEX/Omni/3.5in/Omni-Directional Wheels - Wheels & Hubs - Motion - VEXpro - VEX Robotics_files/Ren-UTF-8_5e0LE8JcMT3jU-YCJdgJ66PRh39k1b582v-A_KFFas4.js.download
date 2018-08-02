@@ -1,0 +1,2 @@
+/*AQAAAFNIQS0yNTYAAQAAAAAAAQAAAAAA-EqXiffAb8iLL4r54r88HRsBuYq-SQLqj47IdKppPUk*//* Script imported from https://content.vexrobotics.com/vexnav/js/vnav.js */
+aFeoOverrideAttrRead("script","src");(function($){if(!$){alert("jQuery not detected.");}var libRootUrl="https://content.vexrobotics.com/vexnav";$(document.head).append($('<link href="'+libRootUrl+'/css/vnav.css" rel="stylesheet" type="text/css" />'));$.ajax({url:libRootUrl+"/vnav.html",method:"GET",dataType:"html",success:function(response){$(document.body).append(response);}});})("jQuery" in window?jQuery:undefined);

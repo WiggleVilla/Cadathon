@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://www.vexrobotics.com/vexpro/motion/wheels-and-hubs/omni-wheels.html -->
+<html lang="en" id="top" class="js no-touch localstorage no-ios" style=""><!--<![endif]--><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--[if (lte IE 8) & (!IEMobile)]><link rel="stylesheet" type="text/css" data-feo-type="earlycss" href="https://www.vexrobotics.com/media/css_secure/a4c94d04cd3525eb37a6a59da162a711.css" media="all" /><![endif]--><!--[if (gte IE 9) | (IEMobile)]><!--><!--<![endif]--><script id="twitter-wjs" async="" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/widgets.js.download"></script><script type="text/javascript" async="" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/platform.js.download" gapi_processed="true"></script><script id="facebook-jssdk" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/sdk.js.download"></script><script src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/297180787396940" async=""></script><script async="" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/fbevents.js.download"></script><script async="" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/analytics.js.download"></script><script blzsys="1" type="text/javascript">//<![CDATA[
+(function(){var cssLinks=document.getElementsByTagName("link");for(var i=cssLinks.length-1;i>-1;i--){if(cssLinks[i].getAttribute("data-feo-type")=="earlycss"){cssLinks[i].parentNode.removeChild(cssLinks[i]);}}})();
+//]]></script><script blzsys="1" type="text/javascript">//<![CDATA[
+function BlzDynamicImageLoader(registeredPollAfterOnload,expectedImageSourceCheck,responsiveScreenWidths,responsiveCell2GMaxWidth,responsiveCell3GMaxWidth,responsiveCell4GMaxWidth,loadDeferral,visibilityBuffer,legacyIOSVisibilityBuffer,imageFormats,skipHidden){var registeredImages=[];var responsiveScreenWidthIndex=-1;var loadComplete=false;var registerHandler=function(element,event,handler){if(undefined!==element.addEventListener){element.addEventListener(event,handler,false);}else{if(undefined!==element.attachEvent){element.attachEvent("on"+event,handler);}}};var unregisterHandler=function(element,event,handler){if(undefined!==element.removeEventListener){element.removeEventListener(event,handler,false);}else{if(undefined!==element.detachEvent){element.detachEvent("on"+event,handler);}}};var getWindowHeight=function(){if(undefined!==self.innerHeight){return self.innerHeight;}else{if(undefined!==document.documentElement&&undefined!==document.documentElement.clientHeight){return document.documentElement.clientHeight;}else{if(undefined!==document.body){return document.body.clientHeight;}}}};var getVerticalScrollPosition=function(){if(undefined!==document.documentElement&&document.documentElement.scrollTop){return document.documentElement.scrollTop;}else{if(undefined!==document.body){return document.body.scrollTop;}}};var isHidden=function(element){return skipHidden&&(element.offsetWidth<=0||element.offsetHeight<=0);};var getVerticalPosition=function(element){if(!element){return 0;}var verticalPosition=element.offsetTop;var parent=element;while(parent=parent.offsetParent){verticalPosition+=parent.offsetTop;}return verticalPosition;};var shouldLoadNow=function(img){switch(loadDeferral){case"onLoad":if(loadComplete){return true;}case"onVisible":return !isHidden(img)&&(getVerticalPosition(img)-getVerticalScrollPosition()-visibilityBuffer)<=getWindowHeight();case"instant":default:return true;}};var determineScreenWidthIndex=function(){var checkConnection=undefined!==navigator.connection&&undefined!=navigator.connection.type;var check2g=checkConnection&&(navigator.connection.type===navigator.connection.CELL_2G)&&-1!==responsiveCell2GMaxWidth;var check3g=checkConnection&&(check2g||navigator.connection.type===navigator.connection.CELL_3G)&&-1!==responsiveCell3GMaxWidth;var check4g=checkConnection&&(check2g||check3g||navigator.connection.type===navigator.connection.CELL_4G)&&-1!==responsiveCell4GMaxWidth;for(responsiveScreenWidthIndex=0;responsiveScreenWidthIndex<responsiveScreenWidths.length;++responsiveScreenWidthIndex){var currentWidth=responsiveScreenWidths[responsiveScreenWidthIndex];if(check2g&&responsiveCell2GMaxWidth<=currentWidth){break;}if(check3g&&responsiveCell3GMaxWidth<=currentWidth){break;}if(check4g&&responsiveCell4GMaxWidth<=currentWidth){break;}if(window.screen.availWidth<=currentWidth){break;}}};var loadImage=function(img,force){if(!img){return;}if(expectedImageSourceCheck&&force!=true){var currentSrc=img.getAttribute("src",true);if(currentSrc==null){currentSrc="";}if(currentSrc!="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw=="){return;}}var source;var finalImage;var responsiveFormats;if(img.getAttribute("data-blzlqsrc")){finalImage=false;source=img.getAttribute("data-blzlqsrc");responsiveFormats=img.getAttribute("data-blzlqmsi");img.removeAttribute("data-blzlqsrc");img.removeAttribute("data-blzlqmsi");}else{finalImage=true;source=img.getAttribute("data-blzsrc");responsiveFormats=img.getAttribute("data-blzmsi");img.removeAttribute("data-blzsrc");img.removeAttribute("data-blzmsi");}if(null!==responsiveFormats&&responsiveFormats.length>responsiveScreenWidthIndex){var srcDotIndex=source.lastIndexOf(".");if(srcDotIndex>-1){source=source.substring(0,srcDotIndex)+"-"+responsiveScreenWidths[responsiveScreenWidthIndex]+"."+imageFormats[responsiveFormats.charAt(responsiveScreenWidthIndex)];}}if(!finalImage){var nextImageLoadHandler=function(){unregisterHandler(img,"load",nextImageLoadHandler);if(loadComplete){loadImage(img,true);}else{var nextImageDeferredLoadHandler=function(){unregisterHandler(window,"load",nextImageDeferredLoadHandler);loadImage(img,true);};registerHandler(window,"load",nextImageDeferredLoadHandler);}};registerHandler(img,"load",nextImageLoadHandler);}img.setAttribute("src",source);};var loadDynamicImages=function(){var deferredImages=[];for(var imageIndex=0;imageIndex<registeredImages.length;++imageIndex){var img=registeredImages[imageIndex];if(shouldLoadNow(img)){loadImage(img);}else{deferredImages.push(img);}}registeredImages=deferredImages;if(("onVisible"===loadDeferral||"onLoad"===loadDeferral)&&(registeredImages.length==0&&loadComplete)){unregisterHandler(window,"resize",loadDynamicImages);unregisterHandler(window,"scroll",loadDynamicImages);}};var registerDynamicImages=function(){registeredImages=[];for(var registeredImageIndex=0;registeredImageIndex<document.images.length;++registeredImageIndex){var img=document.images[registeredImageIndex];if(img.getAttribute("data-blzsrc")){registeredImages.push(img);}}};var repeatedRegisterAndCheck=function(){if(registeredPollAfterOnload||!loadComplete){registerDynamicImages();loadDynamicImages();}if(!loadComplete){setTimeout(repeatedRegisterAndCheck,100);}else{if(registeredPollAfterOnload){setTimeout(repeatedRegisterAndCheck,500);}}};determineScreenWidthIndex();setTimeout(repeatedRegisterAndCheck,100);if("onVisible"===loadDeferral||"onLoad"===loadDeferral){registerHandler(window,"resize",loadDynamicImages);registerHandler(window,"scroll",loadDynamicImages);}registerHandler(window,"load",function(){loadComplete=true;registerDynamicImages();loadDynamicImages();});repeatedRegisterAndCheck();}
+//]]></script><script blzsys="1" type="text/javascript">//<![CDATA[
+var aFEOTagsMap={};var aFeoOverrideAttrRead=function(tag,att,el){try{var pref="data-feo-orig-";if(el){if(!el.getAttribute(pref+att)){return;}}else{var els;if(tag in aFEOTagsMap){els=aFEOTagsMap[tag];}else{els=document.getElementsByTagName(tag);aFEOTagsMap[tag]=els;}for(var i=els.length-1;i>=0;i--){el=els[i];if(el.getAttribute(pref+att)){if(el.aFeoRealGetAttribute){return;}else{break;}}}if(i<0){return;}}el.aFeoRealGetAttribute=el.getAttribute;el.getAttribute=function(a,force){if(a==att&&!force){a=pref+a;}return this.aFeoRealGetAttribute(a);};Object.defineProperty(el,att,{get:function(){return this.aFeoRealGetAttribute(pref+att);}});}catch(err){}};
+//]]></script><script blzsys="1" type="text/javascript">var aFeoApplied=true;</script><script blzsys="1" type="text/javascript">//<![CDATA[
+BlzDynamicImageLoader(true,true,[128,240,320,480],-1,-1,-1,"onVisible",100,1000,["png","gif","jpg","webp","jxr","bmp","jp2"],true);
+//]]></script>
+<title>Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics</title>
+<meta name="description" content="&lt;div class=&quot;head&quot;&gt;&lt;h4&gt;Mounting Hardware Guide&lt;/h4&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Mounting (1) Keyed or Hex VersaHub - 1/4&quot; or 3/8&quot; long screw&lt;/li&gt;
+&lt;li&gt;Mounting (1) Plate Sprocket and (1) Sprocket VersaHub - 1&quot; or 1.25&quot; long screw&lt;/li&gt;
+&lt;li&gt;Mounting (2) Plate Sprocket">
+<meta name="keywords" content="Omni-Directional Wheels">
+<meta name="robots" content="INDEX,FOLLOW">
+<link rel="icon" href="https://www.vexrobotics.com/skin/frontend/rwd/vex/images/favicon/vexpro.ico" type="image/x-icon">
+<link rel="shortcut icon" href="https://www.vexrobotics.com/skin/frontend/rwd/vex/images/favicon/vexpro.ico" type="image/x-icon">
+<meta name="theme-color" content="#009639">
+<!--[if lt IE 7]>
+<script type="text/javascript">var BLANK_URL="https://www.vexrobotics.com/js/blank.html";var BLANK_IMG="https://www.vexrobotics.com/js/spacer.gif";</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/26d7aa54603cd5189dbd475f25d357a3.css">
+<link rel="stylesheet" type="text/css" href="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/577ce94f8ec6e303b868229faefb142c.css" media="all">
+<script type="text/javascript" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/0cf19db1bd2c95f90434902cc9d6e37a.js.download"></script><link type="text/css" rel="stylesheet" href="blob:https://www.vexrobotics.com/eb50ae4d-f48a-4736-81ec-847f406cb575">
+<link rel="stylesheet" href="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/css">
+<link rel="canonical" href="https://www.vexrobotics.com/omni-wheels.html">
+<!--[if  (lte IE 8) & (!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="https://www.vexrobotics.com/media/css_secure/a4c94d04cd3525eb37a6a59da162a711.css" media="all" />
+<![endif]-->
+<!--[if (gte IE 9) | (IEMobile)]><!-->
+<link rel="stylesheet" type="text/css" href="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/692227e1419120a9ef95487d94df53ba.css" media="all">
+<!--<![endif]-->
+<!--[]><!-->
+<link rel="stylesheet" type="text/css" href="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/854dc91f9720df2ada8a1fe6777d56d1.css" media="all">
+<script data-feo-orig-src="https://www.vexrobotics.com/media/js/0b2f2e7d4646db7aebda2ec2fed49728.js" type="text/javascript" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/Ren-UTF-8_hLbhKjjjN6eeQixf_t17JQQQBarw88vlgJEJTunxtrE.js.download"></script>
+<!--<![endif]-->
+<script type="text/javascript">Mage.Cookies.path="/";Mage.Cookies.domain=".www.vexrobotics.com";</script>
+<meta name="viewport" content="initial-scale=1.0, width=device-width">
+<script type="text/javascript">optionalZipCountries=["HK","IE","MO","PA"];</script>
+<!-- BEGIN GOOGLE UNIVERSAL ANALYTICS CODE -->
+<script type="text/javascript">(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments);},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-1531921-11","auto");ga("send","pageview");</script>
+<!-- END GOOGLE UNIVERSAL ANALYTICS CODE -->
+<meta property="og:title" content="Omni-Directional Wheels">
+<meta property="og:type" content="og:product">
+<meta property="og:url" content="https://www.vexrobotics.com/omni-wheels.html">
+<meta property="og:image" content="https://www.vexrobotics.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/2/1/217-2584.jpg">
+<meta property="og:image" content="https://www.vexrobotics.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/2/1/217-2613.jpg">
+<meta property="og:image" content="https://www.vexrobotics.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/2/1/217-2585.jpg">
+<meta property="og:image" content="https://www.vexrobotics.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/2/1/217-4775-cmyk.jpg">
+<meta property="og:description" content="Omni-Directional Wheels">
+<meta property="og:site_name" content="VEX Robotics">
+<meta property="og:locale" content="en_US">
+<meta property="og:updated_time" content="2017-12-15T19:13:16+00:00">
+<meta property="product:brand" content="VEX Robotics">
+<meta property="product:availability" content="instock">
+<meta property="product:price:amount" content="17.99">
+<meta property="product:price:currency" content="USD">
+<script type="application/ld+json">
+{
+
+
+    "@context": "http://schema.org/",
+    "@type": "Product",
+
+    "name": "Omni-Directional Wheels",
+
+		"logo": {
+        "@type": "ImageObject",
+        "url": "https://www.vexrobotics.com/skin/frontend/rwd/default/images/logo.gif",
+        "height": 56,
+        "width": 196    },
+	
+        
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.vexrobotics.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/2/1/217-2584.jpg",
+        "height": 950,
+        "width": 950    },
+    
+        "description": "Omni-Directional Wheels",
+	
+        "sku": "OMNI-WHEELS",
+	
+	
+	    "brand": {
+        "@type": "Thing",
+        "name": "VEX Robotics"    },
+	
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "bestRating": 5,
+        "worstRating": 0,
+        "ratingValue": "0",
+        "reviewCount": "0"
+    },
+
+    "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "17.99",
+        "availability": "http://schema.org/InStock",
+        "seller": {
+            "@type": "Organization",
+            "name": "VEX Robotics"        }
+    },
+
+	"url": "https://www.vexrobotics.com/omni-wheels.html"
+
+
+}
+</script>
+<meta property="twitter:card" content="product">
+<meta property="twitter:site" content="@vexrobotics">
+<meta property="twitter:creator" content="@vexrobotics">
+<meta property="twitter:title" content="Omni-Directional Wheels">
+<meta property="twitter:description" content="Omni-Directional Wheels">
+<meta property="twitter:image:src" content="https://www.vexrobotics.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/2/1/217-2584.jpg">
+<meta property="twitter:data1" content="$17.99">
+<meta property="twitter:label1" content="USD">
+<meta property="twitter:data2" content="vexrobotics.com">
+<meta property="twitter:label2" content="WEBSITE">
+<meta property="twitter:domain" content="vexrobotics.com">
+<!-- Facebook Pixel Code -->
+<script>!function(f,b,e,v,n,t,s){if(f.fbq){return;}n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments);};if(!f._fbq){f._fbq=n;}n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s);}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","297180787396940");fbq("track","PageView");</script>
+<noscript>&lt;img height="1" width="1" style="display:none" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="https://www.facebook.com/tr?id=297180787396940&amp;ev=PageView&amp;noscript=1"/&gt;</noscript>
+<!-- End Facebook Pixel Code -->
+<script>
+    window.algoliaConfig = {"instant":{"enabled":true,"apiKey":"YTNjNzEyNjc0YTdhZGNlN2RhMTkyZDI3Y2EwZTcyYzRiNmM2YjBmOGEyN2JhOWUyNzJjYTc5OTliZmFlMGVmZWZpbHRlcnM9Jm51bWVyaWNGaWx0ZXJzPXZpc2liaWxpdHlfc2VhcmNoJTNEMQ==","selector":".main","isAddToCartEnabled":true,"showStaticContent":false,"title":"","description":"","content":"","imgHtml":"","hasFacets":true},"autocomplete":{"enabled":true,"apiKey":"MGZlMDU5ZGQyOWFjYzZlY2I5MDdlMzI1M2FhYzhmOWQ3NjIxZTRkMTA4NGRlMDRmMjAyMmI0YzZkYTA5YTFlNmZpbHRlcnM9","selector":".algolia-search-input","sections":[{"name":"pages","label":"","hitsPerPage":"5"},{"name":"vex_product_type","label":"","hitsPerPage":"5"}],"nbOfProductsSuggestions":"6","nbOfCategoriesSuggestions":"2","nbOfQueriesSuggestions":"0","displaySuggestionsCategories":true},"extensionVersion":"1.8.1","applicationId":"7WBCFQDQJN","indexName":"vex_magento_vexrobotics","facets":[{"attribute":"vex_product_line","type":"disjunctive","label":"Product Line"},{"attribute":"vex_product_type","type":"conjunctive","label":"Category"},{"attribute":"price","type":"priceRanges","label":"Price"}],"areCategoriesInFacets":false,"hitsPerPage":15,"sortingIndices":[{"attribute":"price","sort":"asc","label":"Price (Low to High)","name":"vex_magento_vexrobotics_products_price_default_asc"},{"attribute":"price","sort":"desc","label":"Price (High to Low)","name":"vex_magento_vexrobotics_products_price_default_desc"}],"isSearchPage":false,"isCategoryPage":false,"removeBranding":true,"priceKey":".USD.default","currencyCode":"USD","currencySymbol":"$","maxValuesPerFacet":10,"autofocus":true,"request":{"query":"","refinementKey":"","refinementValue":"","path":"","level":"","formKey":"E2No38pkIk6TI4tu"},"showCatsNotIncludedInNavigation":false,"showSuggestionsOnNoResultsPage":true,"baseUrl":"https:\/\/www.vexrobotics.com","popularQueries":["wheels","gears","motor","shaft","gear","robotc","bearing","motors","spacers"],"urls":{"logo":"https:\/\/www.vexrobotics.com\/skin\/frontend\/base\/default\/algoliasearch\/search-by-algolia.svg"},"translations":{"to":"to","or":"or","go":"Go","in":"in","popularQueries":"You can try one of the popular search queries","seeAll":"See all products","allDepartments":"All departments","seeIn":"See products in","orIn":"or in","noProducts":"No products for query","noResults":"No results","refine":"Refine","selectedFilters":"Selected Filters","clearAll":"Clear all","previousPage":"Previous page","nextPage":"Next page","searchFor":"Search for products","relevance":"Relevance","categories":"Categories","products":"Products","searchBy":"Search by"}};
+</script>
+<!--[if lte IE 9]>
+<script>document.addEventListener("DOMContentLoaded",function(e){algoliaBundle.$(function($){window.algoliaConfig.autofocus=false;});});</script>
+<![endif]-->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<!--[if lte IE 9]>
+                                <script data-feo-orig-src="https://cdn.polyfill.io/v2/polyfill.min.js" src="/feo-robotevents/W/u/Ren-UTF-8~WugEgSp0-oQQUKHrR_2XQZC3Z40hu90yKcwPz1_cmzE.js"></script>
+                            <![endif]-->
+<script type="text/javascript">var Translator=new Translate([]);</script><meta name="google-site-verification" content="EjkUSwNeYwRfFoV5ZjpNCX6rGdjAXqMK19M200Tyd3w">
+<meta property="fb:page_id" content="92507558458">
+<meta name="p:domain_verify" content="11de403be699e4f6c31d3e2911eafd40">
+<meta name="msvalidate.01" content="6D10F87F5225CF2547FBE0BF88E606F1">
+<!--021fb7e7bbd0f29acab3803f99c6eaab-->
+<script src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/ejy5pvg.js.download"></script>
+<script>try{Typekit.load({async:true});}catch(e){}</script>
+<link href="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/vnav.css" rel="stylesheet" type="text/css"><script src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/saved_resource"></script><style type="text/css">.fancybox-margin{margin-right:17px;}</style><script type="text/javascript" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/host-loader.js.download"></script><script type="text/javascript" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/host.js.download"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{height:100%;overflow:hidden;position:fixed;width:100%}.fb_shrink_active{opacity:1;transform:scale(1, 1);transition-duration:200ms;transition-timing-function:ease-out}.fb_shrink_active:active{opacity:.5;transform:scale(.75, .75)}</style></head>
+<body class="vexallbody vexprobody geo-us  catalog-product-view catalog-product-view product-omni-wheels categorypath-vexpro-motion-wheels-and-hubs category-wheels-and-hubs smaller-header" style="">
+<!-- Facebook JavaScript SDK -->
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/lY4eZXm_YWu.html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";fjs.parentNode.insertBefore(js,fjs);}(document,"script","facebook-jssdk"));</script>
+<script type="text/javascript">
+    var downloads = new Downloads('https://www.vexrobotics.com/downloads/dl/updateDownloads/product/1357/id/%file_id%/');
+</script>
+<div class="wrapper">
+<noscript>
+&lt;div class="global-site-notice noscript"&gt;
+&lt;div class="notice-inner"&gt;
+&lt;p&gt;
+&lt;strong&gt;JavaScript seems to be disabled in your browser.&lt;/strong&gt;&lt;br/&gt;
+You must have JavaScript enabled in your browser to utilize the functionality of this website. &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</noscript>
+<div class="page">
+<script data-feo-orig-src="https://content.vexrobotics.com/vexnav/js/vnav.js" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/Ren-UTF-8_5e0LE8JcMT3jU-YCJdgJ66PRh39k1b582v-A_KFFas4.js.download"></script>
+<script>function init(){window.addEventListener("scroll",function(e){var distanceY=window.pageYOffset||document.documentElement.scrollTop,shrinkOn=80;if(distanceY>shrinkOn){jQuery("body").addClass("smaller-header");}else{if(jQuery("body").hasClass("smaller-header")){jQuery("body").removeClass("smaller-header");}}});}window.onload=init();</script>
+<script>window.facetFilters=["vex_product_line:VEXpro"];window.algoliaConfig.translations.seeIn="Click to view";window.algoliaConfig.translations.allDepartments="all search results";</script>
+<div id="header-wrap">
+<header id="header" class="page-header">
+<div class="page-header-container">
+<a class="logolink vexprologo" href="https://www.vexrobotics.com/vexpro">
+<img src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/vexpro-stacked-trans.svg" alt="VEXpro" class="vexlarge">
+<img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="https://www.vexrobotics.com/skin/frontend/rwd/vex/images/logos/vexpro-horiz-bg.svg" alt="VEXpro" class="vexsmall">
+<img src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/vexpro-horiz-trans.svg" alt="VEXpro" class="vexhorizontal">
+</a>
+<div class="skip-links">
+<a href="https://www.vexrobotics.com/vexpro/motion/wheels-and-hubs/omni-wheels.html#header-nav" class="skip-link skip-nav">
+<span class="icon"></span>
+</a>
+<a data-target-element="#header-search" href="https://www.vexrobotics.com/vexpro/motion/wheels-and-hubs/omni-wheels.html#header-search" class="skip-link skip-search">
+<span class="icon"></span>
+</a>
+<div class="account-cart-wrapper">
+<a href="https://www.vexrobotics.com/customer/account/" data-target-element="#header-account" class="skip-link skip-account">
+<span class="icon"></span>
+</a>
+<a data-target-element="#header-search" href="https://www.vexrobotics.com/vexpro/motion/wheels-and-hubs/omni-wheels.html#header-search" class="skip-link skip-search-icon">
+<span class="icon"></span>
+</a>
+<a href="https://www.vexrobotics.com/customer/account/" data-target-element="#header-website" class="skip-link skip-website">
+<span class="flag-icon flag-icon-us"></span>
+</a>
+<div class="header-minicart">
+<a href="https://www.vexrobotics.com/checkout/cart/" data-target-element="#header-cart" class="skip-link skip-cart  no-count">
+<span class="icon"></span>
+<span class="count">0</span>
+</a>
+<div id="header-cart" class="block block-cart skip-content">
+<div id="minicart-error-message" class="minicart-message"></div>
+<div id="minicart-success-message" class="minicart-message"></div>
+<div class="minicart-wrapper">
+<p class="block-subtitle">
+Recently added item(s) <a class="close skip-link-close" href="https://www.vexrobotics.com/vexpro/motion/wheels-and-hubs/omni-wheels.html#" title="Close">×</a>
+</p>
+<p class="empty">You have no items in your shopping cart.</p>
+</div>
+</div>
+</div>
+<div id="header-website" class="skip-content">
+<div class="website-switcher">
+<label for="select-website">Select Store:</label>
+<div class="row">
+<div class="country-selection col-xs-4">
+<a href="https://www.vexrobotics.com/storeswitcher/?website=vexrobotics">
+<h4>United States</h4>
+<div class="flag-icon flag-icon-us"></div>
+</a>
+</div>
+<div class="country-selection col-xs-4">
+<a href="https://www.vexrobotics.com/storeswitcher/?website=vexroboticsca">
+<h4>Canada</h4>
+<div class="flag-icon flag-icon-ca"></div>
+</a>
+</div>
+<div class="country-selection col-xs-4">
+<a href="https://www.vexrobotics.com/storeswitcher/?website=vexroboticsuk">
+<h4>United Kingdom</h4>
+<div class="flag-icon flag-icon-gb"></div>
+</a>
+</div>
+<div class="country-selection col-xs-4">
+<a href="https://www.vexrobotics.com/storeswitcher/?website=vexroboticseu">
+<h4>Europe</h4>
+<div class="flag-icon flag-icon-eu"></div>
+</a>
+</div>
+<div class="country-selection col-xs-4">
+<a href="https://www.vexrobotics.com/storeswitcher/?website=vexroboticsau">
+<h4>Australia</h4>
+<div class="flag-icon flag-icon-au"></div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="header-search" class="searchbox-container skip-content">
+<form id="search_mini_form" action="https://www.vexrobotics.com/catalogsearch/result/" method="get">
+<div id="algolia-searchbox">
+<label for="search">Search:</label>
+<span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;" id="algolia-autocomplete-tt"><input id="search" type="text" name="q" class="input-text algolia-search-input aa-input" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" placeholder="Search VEXpro" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: aktiv-grotesk, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre></span>
+<span class="clear-cross clear-query-autocomplete"></span>
+<span id="algolia-glass" class="magnifying-glass" width="24" height="24"></span>
+</div>
+</form>
+</div>
+<div id="header-nav" class="skip-content">
+<nav id="nav">
+<ol class="nav-primary">
+<li class="level0 nav-1 first"><a href="https://www.vexrobotics.com/vexpro/why-vexpro" class="level0 ">Why VEXpro?</a></li><li class="level0 nav-2 active parent"><a href="https://www.vexrobotics.com/vexpro/motion" class="level0 has-children">Motion</a><ul class="level0"><li class="level1 nav-2-1 first"><a href="https://www.vexrobotics.com/vexpro/motion/motion" class="level1 ">Motion Overview</a></li><li class="level1 nav-2-2 active"><a href="https://www.vexrobotics.com/vexpro/motion/wheels-and-hubs" class="level1 ">Wheels &amp; Hubs</a></li><li class="level1 nav-2-3"><a href="https://www.vexrobotics.com/vexpro/motion/gearboxes" class="level1 ">Gearboxes</a></li><li class="level1 nav-2-4"><a href="https://www.vexrobotics.com/vexpro/motion/vexpro-gears" class="level1 ">Gears</a></li><li class="level1 nav-2-5"><a href="https://www.vexrobotics.com/vexpro/motion/versarollers" class="level1 ">VersaRollers</a></li><li class="level1 nav-2-6"><a href="https://www.vexrobotics.com/vexpro/motion/sprockets-and-chain" class="level1 ">Sprockets &amp; Chain</a></li><li class="level1 nav-2-7 last"><a href="https://www.vexrobotics.com/vexpro/motion/belts-and-pulleys" class="level1 ">Belts &amp; Pulleys</a></li></ul></li><li class="level0 nav-3 parent"><a href="https://www.vexrobotics.com/vexpro/versaframe" class="level0 has-children">VersaFrame</a><ul class="level0"><li class="level1 nav-3-1 first"><a href="https://www.vexrobotics.com/vexpro/versaframe/all-versaframe-products" class="level1 ">VersaFrame Overview</a></li><li class="level1 nav-3-2"><a href="https://www.vexrobotics.com/vexpro/versaframe/versaframe-stock" class="level1 ">VersaFrame Stock</a></li><li class="level1 nav-3-3"><a href="https://www.vexrobotics.com/vexpro/versaframe/versaframe-gussets-and-mounts" class="level1 ">VersaFrame Gussets and Mounts</a></li><li class="level1 nav-3-4"><a href="https://www.vexrobotics.com/vexpro/versaframe/linear-motion" class="level1 ">Linear Motion</a></li><li class="level1 nav-3-5"><a href="https://www.vexrobotics.com/vexpro/versaframe/versadrop" class="level1 ">VersaDrop</a></li><li class="level1 nav-3-6"><a href="https://www.vexrobotics.com/vexpro/versaframe/single-reduction-clamping-gearbox" class="level1 ">Single Reduction Clamping Gearbox</a></li><li class="level1 nav-3-7"><a href="https://www.vexrobotics.com/vexpro/versaframe/versachassis" class="level1 ">VersaChassis</a></li><li class="level1 nav-3-8"><a href="https://www.vexrobotics.com/vexpro/versaframe/wcd-bearing-blocks" class="level1 ">WCD Bearing Blocks</a></li><li class="level1 nav-3-9"><a href="https://www.vexrobotics.com/vexpro/versaframe/drive-in-a-day" class="level1 ">Drive in a Day</a></li><li class="level1 nav-3-10 last"><a href="https://www.vexrobotics.com/vexpro/versaframe/legacy-structure" class="level1 ">Legacy Structure</a></li></ul></li><li class="level0 nav-4 parent"><a href="https://www.vexrobotics.com/vexpro/motors-electronics" class="level0 has-children">Motors &amp; Electronics</a><ul class="level0"><li class="level1 nav-4-1 first"><a href="https://www.vexrobotics.com/vexpro/motors-electronics/all-motors-electronics-products" class="level1 ">Motors &amp; Electronics Overview</a></li><li class="level1 nav-4-2"><a href="https://www.vexrobotics.com/vexpro/motors-electronics/victor-spx" class="level1 ">Victor SPX</a></li><li class="level1 nav-4-3"><a href="https://www.vexrobotics.com/vexpro/motors-electronics/talon-srx" class="level1 ">Talon SRX</a></li><li class="level1 nav-4-4"><a href="https://www.vexrobotics.com/vexpro/motors-electronics/pneumatic-control-module" class="level1 ">Pneumatic Control Module</a></li><li class="level1 nav-4-5"><a href="https://www.vexrobotics.com/vexpro/motors-electronics/pdp" class="level1 ">Power Distribution Panel</a></li><li class="level1 nav-4-6"><a href="https://www.vexrobotics.com/vexpro/motors-electronics/vrm" class="level1 ">Voltage Regulator Module</a></li><li class="level1 nav-4-7"><a href="https://www.vexrobotics.com/vexpro/motors-electronics/encoders" class="level1 ">Encoders</a></li><li class="level1 nav-4-8"><a href="https://www.vexrobotics.com/vexpro/motors-electronics/cim-motor" class="level1 ">CIM Motor</a></li><li class="level1 nav-4-9"><a href="https://www.vexrobotics.com/vexpro/motors-electronics/mini-cim" class="level1 ">Mini CIM</a></li><li class="level1 nav-4-10"><a href="https://www.vexrobotics.com/vexpro/motors-electronics/bagmotor" class="level1 ">BAG Motor</a></li><li class="level1 nav-4-11"><a href="https://www.vexrobotics.com/vexpro/motors-electronics/775pro" class="level1 ">775pro</a></li><li class="level1 nav-4-12 last"><a href="https://www.vexrobotics.com/vexpro/motors-electronics/motors-vex" class="level1 ">VEX Robotics DC Motor Testing</a></li></ul></li><li class="level0 nav-5"><a href="https://www.vexrobotics.com/vexpro/pneumatics" class="level0 ">Pneumatics</a></li><li class="level0 nav-6 parent"><a href="https://www.vexrobotics.com/vexpro/hardware" class="level0 has-children">Hardware</a><ul class="level0"><li class="level1 nav-6-1 first"><a href="https://www.vexrobotics.com/vexpro/hardware/all-hardware-products" class="level1 ">Hardware Overview</a></li><li class="level1 nav-6-2"><a href="https://www.vexrobotics.com/vexpro/hardware/thunderhexstock" class="level1 ">ThunderHex</a></li><li class="level1 nav-6-3"><a href="https://www.vexrobotics.com/vexpro/hardware/shaftstock" class="level1 ">Shaft Stock</a></li><li class="level1 nav-6-4"><a href="https://www.vexrobotics.com/vexpro/hardware/bearings" class="level1 ">Bearings</a></li><li class="level1 nav-6-5"><a href="https://www.vexrobotics.com/vexpro/hardware/shaftcollars" class="level1 ">Clamping Shaft Collars</a></li><li class="level1 nav-6-6 last"><a href="https://www.vexrobotics.com/vexpro/hardware/acetalspacers" class="level1 ">Acetal Spacers</a></li></ul></li><li class="level0 nav-7"><a href="https://www.vexrobotics.com/vexpro/ftc" class="level0 ">FTC</a></li><li class="level0 nav-8 parent"><a href="https://www.vexrobotics.com/vexpro/examples-guides" class="level0 has-children">Examples &amp; Guides</a><ul class="level0"><li class="level1 nav-8-1 first"><a href="https://www.vexrobotics.com/vexpro/examples-guides/application-examples-guides" class="level1 ">Application Examples &amp; Guides</a></li><li class="level1 nav-8-2"><a href="https://www.vexrobotics.com/vexpro/examples-guides/build-blitz" class="level1 ">Build Blitz</a></li><li class="level1 nav-8-3 last"><a href="https://www.vexrobotics.com/vexpro/examples-guides/motor-testing-94" class="level1 ">VEX Robotics DC Motor Testing</a></li></ul></li><li class="level0 nav-9 parent"><a href="https://www.vexrobotics.com/vexpro/all" class="level0 has-children">View All</a><ul class="level0"><li class="level1 nav-9-1 first"><a href="https://www.vexrobotics.com/vexpro/all/new-for-2018" class="level1 ">Launched in 2018</a></li><li class="level1 nav-9-2"><a href="https://www.vexrobotics.com/vexpro/all/new-for-2017" class="level1 ">Launched in 2017</a></li><li class="level1 nav-9-3"><a href="https://www.vexrobotics.com/vexpro/all/new-for-2016" class="level1 ">Launched in 2016</a></li><li class="level1 nav-9-4"><a href="https://www.vexrobotics.com/vexpro/all/new-for-2015" class="level1 ">Launched in 2015</a></li><li class="level1 nav-9-5 last"><a href="https://www.vexrobotics.com/vexpro/all/discontinued" class="level1 ">Discontinued</a></li></ul></li><li class="level0 nav-10 last parent"><a href="https://www.vexrobotics.com/vexpro/contact-us" class="level0 has-children">Contact Us</a><ul class="level0"><li class="level1 nav-10-1 first"><a href="https://www.vexrobotics.com/vexpro/contact-us/about-us" class="level1 ">About Us</a></li><li class="level1 nav-10-2"><a href="https://www.vexrobotics.com/vexpro/contact-us/marketing-assets" class="level1 ">Marketing Assets</a></li><li class="level1 nav-10-3"><a href="https://www.vexrobotics.com/vexpro/contact-us/order-faq" class="level1 ">Ordering Info &amp; Policies</a></li><li class="level1 nav-10-4 last"><a href="https://www.vexrobotics.com/vexpro/contact-us/find-a-reseller" class="level1 ">Find a Reseller</a></li></ul></li> </ol>
+</nav>
+</div>
+<div id="header-account" class="skip-content">
+<div class="links">
+<ul>
+<li class="first"><a href="https://www.vexrobotics.com/customer/account/" title="My Account">My Account</a></li>
+<li><a href="https://www.vexrobotics.com/wishlist/" title="My Wishlist">My Wishlist</a></li>
+<li><a href="https://www.vexrobotics.com/checkout/cart/" title="My Cart" class="top-link-cart">My Cart</a></li>
+<li><a href="https://www.vexrobotics.com/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
+<li><a href="https://www.vexrobotics.com/customer/account/create/" title="Register">Register</a></li>
+<li class=" last"><a href="https://www.vexrobotics.com/customer/account/login/" title="Log In">Log In</a></li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+</div>
+<div class="main-container col1-layout">
+<div class="main">
+<div class="breadcrumbs">
+<ul>
+<li class="home">
+<a href="https://www.vexrobotics.com/" title="Go to Home Page">Home</a>
+<span>/ </span>
+</li>
+<li class="category6">
+<a href="https://www.vexrobotics.com/vexpro" title="">VEXpro</a>
+<span>/ </span>
+</li>
+<li class="category107">
+<a href="https://www.vexrobotics.com/vexpro/motion" title="">Motion</a>
+<span>/ </span>
+</li>
+<li class="category109">
+<a href="https://www.vexrobotics.com/vexpro/motion/wheels-and-hubs" title="">Wheels &amp; Hubs</a>
+<span>/ </span>
+</li>
+<li class="product">
+<strong>Omni-Directional Wheels</strong>
+</li>
+</ul>
+</div>
+<div class="col-main">
+<div id="algolia-autocomplete-container" style="position: relative;" class="reverse"><span class="aa-dropdown-menu" style="position: absolute; top: 892px; left: -352px; z-index: 100; display: none; right: 0px;"><div class="autocomplete-wrapper">
+        <div class="col9">
+            <div class="aa-dataset-products"></div>
+        </div>
+        <div class="col3">
+            <div class="other-sections">
+                <div class="aa-dataset-suggestions"></div>
+                                    <div class="aa-dataset-0"></div>
+                                    <div class="aa-dataset-1"></div>
+                                    <div class="aa-dataset-2"></div>
+                                    <div class="aa-dataset-3"></div>
+                                    <div class="aa-dataset-4"></div>
+                                    <div class="aa-dataset-5"></div>
+                                    <div class="aa-dataset-6"></div>
+                                    <div class="aa-dataset-7"></div>
+                                    <div class="aa-dataset-8"></div>
+                                    <div class="aa-dataset-9"></div>
+                            </div>
+        </div>
+    </div>;</span></div> <div style="clear: both;"></div>
+<div style="clear: both;"></div>
+<script type="text/javascript">
+    var optionsPrice = new Product.OptionsPrice([]);
+</script>
+<div id="messages_product_view"></div>
+<div class="product-view">
+<form action="https://www.vexrobotics.com/checkout/cart/add/uenc/aHR0cHM6Ly93d3cudmV4cm9ib3RpY3MuY29tL3ZleHByby9tb3Rpb24vd2hlZWxzLWFuZC1odWJzL29tbmktd2hlZWxzLmh0bWw,/product/1357/form_key/E2No38pkIk6TI4tu/" method="post" id="product_addtocart_form">
+<div class="product-essential">
+<input name="form_key" type="hidden" value="E2No38pkIk6TI4tu">
+<div class="no-display">
+<input type="hidden" name="product" value="1357">
+<input type="hidden" name="related_product" id="related-products-field" value="">
+</div>
+<div class="product-img-box">
+<div class="product-name">
+<h1>Omni-Directional Wheels</h1>
+</div>
+<div class="product-image">
+<div class="product-image-gallery">
+<img id="image-main" class="gallery-image visible" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/217-2584.jpg" alt="4&quot; Omni-Directional Wheel" title="4&quot; Omni-Directional Wheel">
+<img id="image-0" class="gallery-image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="https://www.vexrobotics.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/2/1/217-2584.jpg">
+<img id="image-1" class="gallery-image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="https://www.vexrobotics.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/2/1/217-2613.jpg">
+<img id="image-2" class="gallery-image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="https://www.vexrobotics.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/2/1/217-2585.jpg">
+<img id="image-3" class="gallery-image" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="https://www.vexrobotics.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/2/1/217-4775-cmyk.jpg">
+</div>
+</div>
+<div class="more-views">
+<h2>More Views</h2>
+<div class="bx-wrapper" style="max-width: 346px;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 83px;"><ul class="product-image-thumbs bxslider-media" style="width: 615%; position: relative; transition-timing-function: ease-out; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+<li style="float: left; list-style: none; position: relative; width: 79px; margin-right: 10px;">
+<a rel="gallery" class="thumb-link" href="https://www.vexrobotics.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/2/1/217-2584.jpg" title="4&quot; Omni-Directional Wheel" data-image-index="0">
+<img src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/217-2584(1).jpg" width="75" height="75" alt="4&quot; Omni-Directional Wheel">
+</a>
+</li>
+<li style="float: left; list-style: none; position: relative; width: 79px; margin-right: 10px;">
+<a rel="gallery" class="thumb-link" href="https://www.vexrobotics.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/2/1/217-2613.jpg" title="8&quot; Omni-Directional Wheel" data-image-index="1">
+<img src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/217-2613.jpg" width="75" height="75" alt="8&quot; Omni-Directional Wheel">
+</a>
+</li>
+<li style="float: left; list-style: none; position: relative; width: 79px; margin-right: 10px;">
+<a rel="gallery" class="thumb-link" href="https://www.vexrobotics.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/2/1/217-2585.jpg" title="6&quot; Omni-Directional Wheel" data-image-index="2">
+<img src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/217-2585.jpg" width="75" height="75" alt="6&quot; Omni-Directional Wheel">
+</a>
+</li>
+<li style="float: left; list-style: none; position: relative; width: 79px; margin-right: 10px;">
+<a rel="gallery" class="thumb-link" href="https://www.vexrobotics.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/2/1/217-4775-cmyk.jpg" title="3.25&quot; Omni-Directional Wheel" data-image-index="3">
+<img src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/217-4775-cmyk.jpg" width="75" height="75" alt="3.25&quot; Omni-Directional Wheel">
+</a>
+</li>
+</ul></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="https://www.vexrobotics.com/vexpro/motion/wheels-and-hubs/omni-wheels.html" data-slide-index="0" class="bx-pager-link active">1</a></div></div><div class="bx-controls-direction"><a class="bx-prev disabled" href="https://www.vexrobotics.com/vexpro/motion/wheels-and-hubs/omni-wheels.html"></a><a class="bx-next disabled" href="https://www.vexrobotics.com/vexpro/motion/wheels-and-hubs/omni-wheels.html"></a></div></div></div>
+</div>
+<script>
+
+    if (typeof ProductMediaManager !== 'undefined') {
+        ProductMediaManager.createZoom = function(image) { return; }
+    }
+
+    function formatTitle(title, currentArray, currentIndex, currentOpts) {
+        return '<div id="popup-title"><span>' + title + '</span></div>';
+    }
+    jQuery(document).ready(function() {
+        jQuery(".thumb-link")
+            .attr('rel', 'gallery')//needed for nav options
+            .fancybox({
+            'titleShow'     : true,
+            'titlePosition' : 'over',
+            'titleFormat'   : formatTitle,
+            'openEffect'  : 'elastic',
+            'closeEffect' : 'elastic',
+            'overlayShow'   : true,
+            'overlayColor'  : '#000',
+            'hideOnContentClick' : false,
+            'nextEffect'  : 'none',//needed for nav options
+            'prevEffect'  : 'none',//needed for nav options
+            'padding'     : 0,//needed for nav options
+            'margin'      : [20, 60, 20, 60] // Increase left/right margin //needed for nav options
+        });
+    });
+
+	$j = jQuery.noConflict();
+	$j(document).ready(function(){
+		$j('.bxslider-media').bxSlider({
+			hideControlOnEnd: true,
+			infiniteLoop: false,
+			easing: 'ease-out',
+    		minSlides: 3,
+    		maxSlides: 4,
+    		slideWidth: 79,
+    		slideMargin: 10
+		});
+	});
+
+</script>
+</div>
+<div class="product-shop">
+<div class="product-name">
+<span class="h1">Omni-Directional Wheels</span>
+</div>
+<div class="price-info">
+</div>
+<div class="short-description">
+<div class="std"><p>Omni-Directional wheels roll forward like normal wheels, but slide sideways with almost no friction (no skidding during turns). Use these wheels to make your robot turn smoothly or build a holonomic drivetrain.</p>
+<p>VEXpro Omni-Directional Wheels are manufactured from Glass-filled Nylon with high-traction rubber rollers. Compatible with VEXpro VersaHubs for driving with a sprocket or can be used with bearings for use on an axle.</p>
+<p>These Omni-Directional wheels were designed from the ground up to give the smoothest ride possible. Our construction method, using a dual roller design, allows for a constant contact patch with a narrow profile. Each roller is tailored for the individual wheel diameter, and provides the correct, constant radius. We don't share rollers between wheel types -- these wheels aren't "almost round" they're actually round. This smooth-ride provides higher efficiency and reduces wasted power!</p>
+<p>Omni-Directional wheel assembly hardware is separate from sprocket mounting hardware. Sprockets are screwed into captive 8-32 standoffs. This allows for easy removal and replacement of sprockets without disassembling the entire wheel. No more worrying about your whole wheel falling apart just because you wanted to remove the sprocket.</p>
+<p><b>Ships fully assembled. The 3.25" Omni-Directional Wheel (217-4775) only has a center bore, and does not include mounting holes for sprocket, gear, or hub attachment.</b></p></div>
+</div>
+<div class="extra-info">
+<p class="availability in-stock">
+<span class="label">Availability:</span>
+<span class="value">In stock</span>
+</p>
+</div>
+</div>
+<div class="add-to-cart-wrapper">
+<div class="add-to-box">
+<span class="or">OR</span>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="grouped-items-table-wrapper">
+<table class="data-table grouped-items-table" id="super-product-table-d41d8cd98f00b204e9800998ecf8427e">
+<colgroup><col width="45%">
+<col>
+<col>
+<col>
+</colgroup><thead>
+<tr class="first last">
+<th>Product Name</th>
+<th>Availability</th>
+<th class="a-right">Price</th>
+<th class="a-right">Qty</th>
+</tr>
+</thead>
+<tbody>
+<tr class="first odd">
+<td class="name">
+<div class="name-wrapper">3.25" Omni-Directional Wheel</div>
+<div class="sku-wrapper">217-4775</div>
+</td>
+<td>
+<div class="availability-wrapper">
+<p class="availability in-stock">
+<span class="value">In Stock</span>
+</p>
+</div>
+</td>
+<td class="a-right">
+<div class="price-box">
+<span class="regular-price" id="product-price-457">
+<span class="price">$17.99</span> </span>
+</div>
+</td>
+<td class="a-right last">
+<div class="qty-wrapper">
+<input id="super_group_457" type="text" pattern="\d*" name="super_group[457]" maxlength="12" value="0" title="Qty" class="input-text qty">
+</div>
+</td>
+</tr>
+<tr class="even">
+<td class="name">
+<div class="name-wrapper">4" Omni-Directional Wheel</div>
+<div class="sku-wrapper">217-2584</div>
+</td>
+<td>
+<div class="availability-wrapper">
+<p class="availability in-stock">
+<span class="value">In Stock</span>
+</p>
+</div>
+</td>
+<td class="a-right">
+<div class="price-box">
+<span class="regular-price" id="product-price-23">
+<span class="price">$17.99</span> </span>
+</div>
+</td>
+<td class="a-right last">
+<div class="qty-wrapper">
+<input id="super_group_23" type="text" pattern="\d*" name="super_group[23]" maxlength="12" value="0" title="Qty" class="input-text qty">
+</div>
+</td>
+</tr>
+<tr class="odd">
+<td class="name">
+<div class="name-wrapper">6" Omni-Directional Wheel</div>
+<div class="sku-wrapper">217-2585</div>
+</td>
+<td>
+<div class="availability-wrapper">
+<p class="availability in-stock">
+<span class="value">In Stock</span>
+</p>
+</div>
+</td>
+<td class="a-right">
+<div class="price-box">
+<span class="regular-price" id="product-price-24">
+<span class="price">$22.99</span> </span>
+</div>
+</td>
+<td class="a-right last">
+<div class="qty-wrapper">
+<input id="super_group_24" type="text" pattern="\d*" name="super_group[24]" maxlength="12" value="0" title="Qty" class="input-text qty">
+</div>
+</td>
+</tr>
+<tr class="last even">
+<td class="name">
+<div class="name-wrapper">8" Omni-Directional Wheel</div>
+<div class="sku-wrapper">217-2613</div>
+</td>
+<td>
+<div class="availability-wrapper">
+<p class="availability in-stock">
+<span class="value">In Stock</span>
+</p>
+</div>
+</td>
+<td class="a-right">
+<div class="price-box">
+<span class="regular-price" id="product-price-34">
+<span class="price">$28.99</span> </span>
+</div>
+</td>
+<td class="a-right last">
+<div class="qty-wrapper">
+<input id="super_group_34" type="text" pattern="\d*" name="super_group[34]" maxlength="12" value="0" title="Qty" class="input-text qty">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<script type="text/javascript">decorateTable('super-product-table-d41d8cd98f00b204e9800998ecf8427e')</script>
+</div>
+<div class="lower-addtocart">
+<div class="add-to-cart">
+<div class="add-to-cart-buttons">
+<button type="button" title="Add to Cart" class="button btn-cart" onclick="productAddToCartForm.submit(this)"><span><span>Add to Cart</span></span></button>
+</div>
+<div class="add-to-wishlist-buttons">
+<a class="button btn-cart" href="https://www.vexrobotics.com/wishlist/index/add/product/1357/form_key/E2No38pkIk6TI4tu/" onclick="productAddToCartForm.submitLight(this, this.href); return false;">Add to Wishlist</a>
+</div>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+    //<![CDATA[
+        var productAddToCartForm = new VarienForm('product_addtocart_form');
+        productAddToCartForm.submit = function(button, url) {
+            if (this.validator.validate()) {
+                var form = this.form;
+                var oldUrl = form.action;
+
+                if (url) {
+                   form.action = url;
+                }
+                var e = null;
+                try {
+                    this.form.submit();
+                } catch (e) {
+                }
+                this.form.action = oldUrl;
+                if (e) {
+                    throw e;
+                }
+
+                if (button && button != 'undefined') {
+                    button.disabled = true;
+                }
+            }
+        }.bind(productAddToCartForm);
+
+        productAddToCartForm.submitLight = function(button, url){
+            if(this.validator) {
+                var nv = Validation.methods;
+                delete Validation.methods['required-entry'];
+                delete Validation.methods['validate-one-required'];
+                delete Validation.methods['validate-one-required-by-name'];
+                // Remove custom datetime validators
+                for (var methodName in Validation.methods) {
+                    if (methodName.match(/^validate-datetime-.*/i)) {
+                        delete Validation.methods[methodName];
+                    }
+                }
+
+                if (this.validator.validate()) {
+                    if (url) {
+                        this.form.action = url;
+                    }
+                    this.form.submit();
+                }
+                Object.extend(Validation.methods, nv);
+            }
+        }.bind(productAddToCartForm);
+    //]]>
+    </script>
+<div class="product-collateral toggle-content tabs">
+<ul class="toggle-tabs"><li class=""><span>Description</span></li><li><span>Material Type</span></li><li><span>Drawing</span></li><li><span>Coefficient of Friction</span></li><li><span>Weight</span></li><li><span>Other Info</span></li><li class="last current"><span>CAD Files</span></li></ul><dl id="collateral-tabs" class="collateral-tabs">
+<dt class="tab"><span>Description</span></dt>
+<dd class="tab-container">
+<div class="tab-content"> <h2>Details</h2>
+<div class="std">
+<div class="head"><h4>Mounting Hardware Guide</h4></div>
+<ul>
+<li>Mounting (1) Keyed or Hex VersaHub - 1/4" or 3/8" long screw</li>
+<li>Mounting (1) Plate Sprocket and (1) Sprocket VersaHub - 1" or 1.25" long screw</li>
+<li>Mounting (2) Plate Sprockets and (2) Sprocket Versahubs - 1.5" or 1.75" long screw</li>
+</ul> </div>
+</div>
+</dd>
+<dt class="tab"><span>Material Type</span></dt>
+<dd class="tab-container">
+<div class="tab-content"><b>Body:</b><br>
+<li>Glass-filled Nylon</li>
+<br>
+<b>Rollers:</b><br>
+<li>3.25" - 90 Shore TPR Rubber</li>
+<li>4" - b70 Shore TPR Rubber</li>
+<li>6" - b70 Shore TPR Rubber</li>
+<li>8" - b70 Shore TPR Rubber</li></div>
+</dd>
+<dt class="tab"><span>Drawing</span></dt>
+<dd class="tab-container">
+<div class="tab-content"><div class="container">
+<div class="hidden-xs hidden-sm">
+<div class="col-md-4">
+<ul style="list-style-type:disc; margin-left:15px">
+<b>Engineering Drawings</b>
+<li><a target="myiframe" href="https://content.vexrobotics.com/vexpro/pdf/217-4775-Drawing-20150824.PDF"> 3.25" Omni-Directional Wheel (217-4775)</a></li>
+<li><a target="myiframe" href="https://content.vexrobotics.com/vexpro/pdf/217-2584-Drawing-20140819.PDF"> 4" Omni-Directional Wheel (217-2584)</a></li>
+<li><a target="myiframe" href="https://content.vexrobotics.com/vexpro/pdf/217-2585-Drawing-20140819.PDF"> 6" Omni-Directional Wheel (217-2585)</a></li>
+<li><a target="myiframe" href="https://content.vexrobotics.com/vexpro/pdf/217-2613-Drawing-20140818.PDF"> 8" Omni-Directional Wheel (217-2613)</a></li>
+</ul>
+</div>
+<div class="col-md-8">
+<iframe style="width:100%; min-height:400px; overflow-x:hidden; overflow-y:hidden;" name="myiframe" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/gview.html"></iframe>
+</div>
+</div>
+<div class="visible-xs visbile-sm">
+<ul style="list-style-type:disc; margin-left:15px">
+<b>Engineering Drawings</b>
+<li><a href="https://content.vexrobotics.com/vexpro/pdf/217-4775-Drawing-20150824.PDF"> 3.25" Omni-Directional Wheel (217-4775)</a></li>
+<li><a href="https://content.vexrobotics.com/vexpro/pdf/217-2584-Drawing-20140819.PDF"> 4" Omni-Directional Wheel (217-2584)</a></li>
+<li><a href="https://content.vexrobotics.com/vexpro/pdf/217-2585-Drawing-20140819.PDF"> 6" Omni-Directional Wheel (217-2585)</a></li>
+<li><a href="https://content.vexrobotics.com/vexpro/pdf/217-2613-Drawing-20140818.PDF"> 8" Omni-Directional Wheel (217-2613)</a></li>
+</ul>
+</div>
+</div><!--End Container-->
+</div>
+</dd>
+<dt class="tab"><span>Coefficient of Friction</span></dt>
+<dd class="tab-container">
+<div class="tab-content">1.1</div>
+</dd>
+<dt class="tab"><span>Weight</span></dt>
+<dd class="tab-container">
+<div class="tab-content"><li>3.25 Omni-Directional Wheel (217-4775)" - 0.39 lbs</li>
+<li>4" Omni-Directional Wheel (217-2584) - 0.42 lbs</li>
+<li>6" Omni-Directional Wheel (217-2585) - 0.94 lbs</li>
+<li>8" Omni-Directional Wheel (217-2613)- 1.35 lbs</li></div>
+</dd>
+<dt class="tab"><span>Other Info</span></dt>
+<dd class="tab-container">
+<div class="tab-content"><b>Mounting Holes:</b> (6) 8-32 threaded mounting holes (into captive standoffs) on a 1.875" bolt circle<br>
+<br>
+<b>Bearing Hole:</b> 1.125" OD Bearing Hole<br>
+<br>
+<b>Bearing Retainers:</b> (3) 0.130" holes (designed to self-tap with a #8 screw) on a 1.4" bolt circle<br>
+<br>
+<b>Load Rating:</b> Conservatively rated for use on 200 lb robots</div>
+</dd>
+<dt class="tab last current"><span>CAD Files</span></dt>
+<dd class="tab-container last current">
+<div class="tab-content vc-tab">
+<div class="vc-box" id="vc-left">
+<h3>CAD</h3>
+<div class="vc-link">
+<a href="https://www.vexrobotics.com/vexcad/download/index/file/217-4775/">3.25" Omni-Directional Wheel (217-4775)</a>
+<span class="vc-actions">
+<a href="https://www.vexrobotics.com/vexpro/motion/wheels-and-hubs/omni-wheels.html#" class="vc-renderable vc-preview vc-pro" data-uri="https://clara.io/player/v2/212f3dc2-05d3-4f6b-9080-decb1498a128"></a>
+<a href="https://www.vexrobotics.com/vexcad/download/index/file/217-4775/" class="vc-download vc-pro"></a>
+</span>
+</div>
+<div class="vc-link">
+<a href="https://www.vexrobotics.com/vexcad/download/index/file/217-2584/">4" Omni-Directional Wheel (217-2584)</a>
+<span class="vc-actions">
+<a href="https://www.vexrobotics.com/vexpro/motion/wheels-and-hubs/omni-wheels.html#" class="vc-renderable vc-preview vc-pro" data-uri="https://clara.io/player/v2/6453a780-3ef5-4b6d-88cb-ac7e11f4a8f1"></a>
+<a href="https://www.vexrobotics.com/vexcad/download/index/file/217-2584/" class="vc-download vc-pro"></a>
+</span>
+</div>
+<div class="vc-link">
+<a href="https://www.vexrobotics.com/vexcad/download/index/file/217-2585/">6" Omni-Directional Wheel (217-2585)</a>
+<span class="vc-actions">
+<a href="https://www.vexrobotics.com/vexpro/motion/wheels-and-hubs/omni-wheels.html#" class="vc-renderable vc-preview vc-pro" data-uri="https://clara.io/player/v2/51a6c1e7-a6cd-4aca-b591-a53b724f7ef6"></a>
+<a href="https://www.vexrobotics.com/vexcad/download/index/file/217-2585/" class="vc-download vc-pro"></a>
+</span>
+</div>
+<div class="vc-link">
+<a href="https://www.vexrobotics.com/vexcad/download/index/file/217-2613/">8" Omni-Directional Wheel (217-2613)</a>
+<span class="vc-actions">
+<a href="https://www.vexrobotics.com/vexpro/motion/wheels-and-hubs/omni-wheels.html#" class="vc-renderable vc-preview vc-pro" data-uri="https://clara.io/player/v2/6efe174c-8050-4b0e-a0e1-73b481869d8c"></a>
+<a href="https://www.vexrobotics.com/vexcad/download/index/file/217-2613/" class="vc-download vc-pro"></a>
+</span>
+</div>
+<hr>
+<div class="vc-link">
+<a href="https://www.vexrobotics.com/vexcad/download/archive/?archive=150">Download All Files</a> </div>
+</div>
+<div class="vc-box" id="vc-right"><iframe allowfullscreen="true" frameborder="0" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/212f3dc2-05d3-4f6b-9080-decb1498a128.html" style="height: 500px; width: 100%;"></iframe></div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+<script type="text/javascript">
+    var lifetime = 3600;
+    var expireAt = Mage.Cookies.expires;
+    if (lifetime > 0) {
+        expireAt = new Date();
+        expireAt.setTime(expireAt.getTime() + lifetime * 1000);
+    }
+    Mage.Cookies.set('external_no_cache', 1, expireAt);
+</script>
+</div>
+</div>
+</div>
+<div class="footer-container">
+<div class="footer">
+<style>.display-usca {display:none;}
+	.display-ukeu {display:none;}
+
+	body.geo-us .display-usca {display:block;}
+	body.geo-ca .display-usca {display:block;}
+	body.geo-uk .display-ukeu {display:block;}
+	body.geo-eu .display-ukeu {display:block;}
+
+	body.geo-us span.display-usca {display:inline;}
+	body.geo-ca span.display-usca {display:inline;}
+	body.geo-uk span.display-ukeu {display:inline;}
+	body.geo-eu span.display-ukeu {display:inline;}
+
+
+	body.geo-us span.hideau {display:none;}
+	body.geo-ca span.hideau {display:none;}
+	body.geo-uk span.hideau {display:none;}
+	body.geo-eu span.hideau {display:none;}
+	body.geo-au span.showau {display:none;}
+
+
+	/* desktop */
+@media (min-width: 992px) {
+	.main-container .footer-container {
+	    background: #e6e6e6;
+	    border-top: 1px solid #ccc;
+	    margin-left: -30px;
+	    width: 200%;
+	    margin-bottom:-30px;
+	    padding-bottom: 60px;
+	} 
+}
+
+
+
+.footer-container {
+    background: #e6e6e6;
+    border-top: 1px solid #ccc;
+    margin-bottom:-30px;
+    padding-bottom: 60px;
+}
+
+.footer {
+	border:none;
+}</style>
+<script>jQuery(".logolink").mousedown(function(event){if(event.which===3){alert('Are you looking for a high-resolution version of our logo to download?  Check out the "Marketing Assets" link in our footer for logos, style guides, and more!');}});</script>
+<div class="row">
+<div class="col-xs-6 col-sm-3">
+<p><strong>Support</strong></p>
+<p><a href="https://www.vexrobotics.com/contact-us">Contact Us</a></p>
+<p><a href="http://www.vexiqforum.com/" target="_blank">VEX IQ Forum</a></p>
+<p><a href="https://www.vexrobotics.com/vexiq/resources/vexos">VEXos (VEX IQ Firmware)</a></p>
+<p><a href="http://www.vexforum.com/" target="_blank">VEX EDR Forum</a></p>
+<p><a href="https://www.vexrobotics.com/vexedr/resources/firmware">VEX EDR Firmware</a></p>
+<p><a href="https://www.vexrobotics.com/contact-us/order-faq">Ordering Info &amp; Policies</a>
+</p><p><a href="http://link.vex.com/vex/support/RMA-Form">VEX Robotics RMA Form</a>
+</p></div>
+<div class="col-xs-6 col-sm-3">
+<p><strong>Educational Resources</strong></p>
+<p><a href="https://www.vexrobotics.com/vexiq/education/educational-tools">VEX IQ Curriculum</a></p>
+<p><a href="https://www.vexrobotics.com/vexedr/education/educational-tools">VEX EDR Curriculum</a></p>
+<p><a href="https://www.vexrobotics.com/vexpro/examples-guides">VEXpro Application Examples</a></p>
+<p><a href="http://motors.vex.com/">VEX Robotics DC Motor Testing</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+<div class="col-xs-6 col-sm-3">
+<p><strong>Partners</strong></p>
+<p><a href="http://www.roboticseducation.org/" target="_blank">Robotics Education &amp; Competition Foundation</a></p>
+<p><a href="http://www.robomatter.com/" target="_blank">Robomatter</a></p>
+<p><a href="http://www.pltw.org/" target="_blank">Project Lead the Way (PLTW)</a></p>
+<p><a href="http://www.hexbug.com/invent" target="_blank">HEXBUG Inventor Portal</a></p>
+</div>
+<div class="col-xs-6 col-sm-3">
+<p><strong>VEX Robotics</strong></p>
+<p><a href="https://www.vexrobotics.com/about-us/">About Us</a></p>
+<p><a href="https://www.vexrobotics.com/vexiq">VEX IQ</a></p>
+<p><a href="https://www.vexrobotics.com/vexedr">VEX EDR</a></p>
+<p><a href="https://www.vexrobotics.com/vexpro">VEXpro</a></p>
+<p><a href="https://www.vexrobotics.com/customer/account">My Account</a></p>
+<p><a href="https://www.vexrobotics.com/contact-us/marketing-assets">Marketing Assets</a></p>
+</div>
+</div>
+<div class="row" style="text-align:center; border-top: 1px solid #ccc; padding-top: 30px;">
+<div class="col-xs-12 col-sm-3">
+<a href="http://www.innovationfirst.com/" target="_new"><img id="ifi_logo_footer" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="//content.vexrobotics.com/logos/IFI-subsidiary.svg" alt="Innovation First, International" style="max-width:175px; margin-left:auto; margin-right:auto; margin-bottom:20px"></a>
+</div>
+<div class="col-xs-12 col-sm-9" style="font-size:10px; color:black">
+VEX and VEX Robotics are trademarks or service marks of Innovation First International, Inc.<br>
+Copyright © 2002-2018. All Rights Reserved. VEX Robotics, Inc. is a subsidiary of Innovation First International, Inc.<br>
+All other product names/marks of others are the property of their respective owners. <a href="https://www.vexrobotics.com/privacy-policy">Privacy Policy</a><br>
+Patents and/or Patents Pending: <a href="http://www.innovationfirst.com/patents">innovationfirst.com/patents</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Google +1 platform.js -->
+<script type="text/javascript">(function(){var po=document.createElement("script");po.type="text/javascript";po.async=true;po.src="https://apis.google.com/js/platform.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(po,s);})();</script>
+<!-- Twitter widgets.js -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.async=true;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script>
+    /* <![CDATA[ */
+    var google_tag_params = {
+                ecomm_prodid: 'OMNI-WHEELS',
+                ecomm_pagetype: 'product',
+                ecomm_pvalue: 0.00,
+                        ecomm_category: 'Motion',
+                        ecomm_totalvalue: 0.00            };
+    /* ]]> */
+</script>
+<script>var google_conversion_id=861451786;var google_custom_params=window.google_tag_params;var google_remarketing_only=true;</script>
+<script src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/conversion.js.download"></script>
+<noscript>
+&lt;div style="display:inline;"&gt;
+&lt;img height="1" width="1" style="border-style:none;" alt="" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAQAICRAEAOw==" data-blzsrc="//googleads.g.doubleclick.net/pagead/viewthroughconversion/861451786/?value=0&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+&lt;/div&gt;
+</noscript>
+<div id="downloads_video_popup" style="left: 660px; top: 30%; display: none;">
+<div class="popup-cont">
+<div id="dl_video_content">
+<div id="dl_video_title">
+<h2>video title</h2>
+</div>
+<div id="dl_video">
+video content
+</div>
+</div>
+<div id="dl-spinner" class="spinner"></div>
+<div type="button" id="close_popup" class="close-button"></div>
+</div>
+</div>
+<div id="downloads_video_overlay" style="display: none;"></div>
+<script type="text/javascript">downloads.postInit();</script>
+<!-- Product hit template -->
+<script type="text/template" id="autocomplete_products_template">
+    <a class="algoliasearch-autocomplete-hit" href="{{url}}">
+        {{#thumbnail_url}}
+            <div class="thumb"><img src="{{thumbnail_url}}" /></div>
+        {{/thumbnail_url}}
+
+        <div class="info">
+            {{{_highlightResult.name.value}}}
+            {{^sku.length}}
+            <div class="algoliasearch-autocomplete-sku">{{sku}}</div>
+            {{/sku.length}}
+
+            <div class="algoliasearch-autocomplete-category">
+                {{#categories_without_path}}
+                    in                    {{{categories_without_path}}}
+                {{/categories_without_path}}
+
+                {{#_highlightResult.color}}
+                    {{#_highlightResult.color.value}}
+                        <span>
+                           {{#categories_without_path}} | {{/categories_without_path}} Color:  {{{_highlightResult.color.value}}}
+                        </span>
+                    {{/_highlightResult.color.value}}
+                {{/_highlightResult.color}}
+            </div>
+
+            {{^hide_buynow_availability}}
+            <div class="algoliasearch-autocomplete-price">
+                <span class="after_special {{#price.USD.default_original_formated}}promotion{{/price.USD.default_original_formated}}">
+                    {{price.USD.default_formated}}
+                </span>
+
+                {{#price.USD.default_original_formated}}
+                    <span class="before_special">
+                        {{price.USD.default_original_formated}}
+                    </span>
+                {{/price.USD.default_original_formated}}
+            </div>
+            {{/hide_buynow_availability}}
+        </div>
+    </a>
+</script>
+<!-- Category hit template -->
+<script type="text/template" id="autocomplete_categories_template">
+    <a class="algoliasearch-autocomplete-hit" href="{{url}}">
+        {{#image_url}}
+            <div class="thumb">
+                <img src="{{image_url}}" />
+            </div>
+        {{/image_url}}
+
+        <div class="info{{^image_url}}-without-thumb{{/image_url}}">
+
+            {{#_highlightResult.path}}
+                {{{_highlightResult.path.value}}}
+            {{/_highlightResult.path}}
+            {{^_highlightResult.path}}
+                {{{path}}}
+            {{/_highlightResult.path}}
+
+            {{#product_count}}
+                <small>({{product_count}})</small>
+            {{/product_count}}
+
+        </div>
+        <div class="clearfix"></div>
+    </a>
+</script><!-- Page hit template -->
+<script type="text/template" id="autocomplete_pages_template">
+    <a class="algoliasearch-autocomplete-hit" href="{{url}}">
+        <div class="info-without-thumb">
+            {{{_highlightResult.name.value}}}
+
+            {{#content}}
+                <div class="details">
+                    {{{content}}}
+                </div>
+            {{/content}}
+        </div>
+        <div class="clearfix"></div>
+    </a>
+</script><!-- Extra attribute hit template -->
+<script type="text/template" id="autocomplete_extra_template">
+    <a class="algoliasearch-autocomplete-hit" href="{{url}}">
+        <div class="info-without-thumb">
+            {{{_highlightResult.value.value}}}
+        </div>
+        <div class="clearfix"></div>
+    </a>
+</script><!-- Suggestion hit template -->
+<script type="text/template" id="autocomplete_suggestions_template">
+    <a class="algoliasearch-autocomplete-hit" href="{{url}}">
+        <svg xmlns="http://www.w3.org/2000/svg" class="algolia-glass-suggestion magnifying-glass" width="24" height="24" viewBox="0 0 128 128" >
+            <g transform="scale(2.5)">
+                <path stroke-width="3" d="M19.5 19.582l9.438 9.438"></path>
+                <circle stroke-width="3" cx="12" cy="12" r="10.5" fill="none"></circle>
+                <path d="M23.646 20.354l-3.293 3.293c-.195.195-.195.512 0 .707l7.293 7.293c.195.195.512.195.707 0l3.293-3.293c.195-.195.195-.512 0-.707l-7.293-7.293c-.195-.195-.512-.195-.707 0z" ></path>
+            </g>
+        </svg>
+        <div class="info-without-thumb">
+            {{{_highlightResult.query.value}}}
+
+            {{#category}}
+                <span class="text-muted">in</span> <span class="category-tag">{{category}}</span>
+            {{/category}}
+        </div>
+        <div class="clearfix"></div>
+    </a>
+</script><!-- General autocomplete menu template -->
+<script type="text/template" id="menu-template"><div class="autocomplete-wrapper">
+        <div class="col9">
+            <div class="aa-dataset-products"></div>
+        </div>
+        <div class="col3">
+            <div class="other-sections">
+                <div class="aa-dataset-suggestions"></div>
+                                    <div class="aa-dataset-0"></div>
+                                    <div class="aa-dataset-1"></div>
+                                    <div class="aa-dataset-2"></div>
+                                    <div class="aa-dataset-3"></div>
+                                    <div class="aa-dataset-4"></div>
+                                    <div class="aa-dataset-5"></div>
+                                    <div class="aa-dataset-6"></div>
+                                    <div class="aa-dataset-7"></div>
+                                    <div class="aa-dataset-8"></div>
+                                    <div class="aa-dataset-9"></div>
+                            </div>
+        </div>
+    </div>;</script>
+<!-- Instantsearch wrapper template -->
+<script type="text/template" id="instant_wrapper_template">
+    {{#findAutocomplete}}
+    <div id="algolia-autocomplete-container"></div>
+    {{/findAutocomplete}}
+    <div id="algolia_instant_selector" class=" with-facets">
+
+        
+        <div class="row">
+            <div class="col-md-3" id="algolia-left-container">
+                <div id="refine-toggle" class="visible-xs visible-sm">+ Refine</div>
+                <div class="hidden-xs hidden-sm" id="instant-search-facets-container">
+                    <div id="current-refinements"></div>
+                </div>
+            </div>
+
+            <div class="col-md-9" id="algolia-right-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            {{#second_bar}}
+                            <div id="instant-search-bar-container">
+                                <div id="instant-search-box">
+                                    <div class="instant-search-bar-label">
+                                        <span class="icon"></span>
+                                        <span>Current search</span>
+                                    </div>
+                                    <div class="instant-search-bar-wrapper">
+                                        <label for="instant-search-bar">
+                                            Search:                                        </label>
+
+                                        <input placeholder="Search for products"
+                                               id="instant-search-bar" type="text" autocomplete="off" spellcheck="false"
+                                               autocorrect="off" autocapitalize="off"/>
+
+                                        <span class="clear-cross clear-query-instant"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/second_bar}}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <div class="hits">
+                            <div class="infos">
+                                <div class="pull-left" id="algolia-stats"></div>
+                                <div class="pull-right">
+                                    <div class="sort-by-label pull-left">
+                                        SORT BY                                    </div>
+                                    <div class="pull-left" id="algolia-sorts"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div id="instant-search-results-container"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="text-center">
+                    <div id="instant-search-pagination-container"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</script>
+<!-- Product hit template -->
+<script type="text/template" id="instant-hit-template">
+    {{#hits}}
+        <div class="col-md-4 col-sm-6">
+            <div class="result-wrapper">
+                <a href="{{url}}" class="result vpl_{{ vex_product_line }}">
+                    <div class="result-content">
+                        <div class="result-thumbnail">
+                            {{#image_url}}<img src="{{{ image_url }}}"/>{{/image_url}}
+                            {{^image_url}}<span class="no-image"></span>{{/image_url}}
+                        </div>
+                        <div class="result-sub-content">
+                            <h3 class="result-title text-ellipsis">
+                                {{{ _highlightResult.name.value }}}
+                            </h3>
+                            {{^sku.length}}
+                            <div class="sku">{{{_highlightResult.sku.value}}}</div>
+                            {{/sku.length}}
+                            <div class="ratings">
+                                <div class="ratings-wrapper">
+                                    {{^hide_buynow_availability}}
+
+                                    <div class="price">
+                                        <div class="price-wrapper">
+                                            <div>
+                                                <span
+                                                    class="after_special {{#price.USD.default_original_formated}}promotion{{/price.USD.default_original_formated}}">
+                                                    {{price.USD.default_formated}}
+                                                </span>
+
+                                                {{#price.USD.default_original_formated}}
+                                                    <span class="before_special">
+                                                        {{price.USD.default_original_formated}}
+                                                    </span>
+                                                {{/price.USD.default_original_formated}}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {{/hide_buynow_availability}}
+                                </div>
+                            </div>
+                            <div class="result-description text-ellipsis">{{{ _highlightResult.description.value }}}</div>
+
+                            {{^hide_buynow_availability}}
+                                {{#isAddToCartEnabled}}
+                                    {{#in_stock}}
+                                        <form action="https://www.vexrobotics.com//checkout/cart/add/product/{{objectID}}"
+                                              method="post">
+                                            <input type="hidden" name="form_key"
+                                                   value="E2No38pkIk6TI4tu"/>
+                                            <input type="hidden" name="qty" value="1">
+                                            <button type="submit">Add to Cart</button>
+                                        </form>
+                                    {{/in_stock}}
+                                {{/isAddToCartEnabled}}
+                                {{^in_stock}}
+                                    <div class="out_of_stock">Out of Stock</div>
+                                {{/in_stock}}
+                                {{#custom_stock_status}}
+                                    <div class="custom_stock_status">{{custom_stock_status}}</div>
+                                {{/custom_stock_status}}
+                            {{/hide_buynow_availability}}
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+            </div>
+        </div>
+    {{/hits}}
+</script>
+<!-- Search statistics template (used for displaying hits' count and time of query) -->
+<script type="text/template" id="instant-stats-template">
+    {{#hasOneResult}}
+        <strong>1</strong> result found    {{/hasOneResult}}
+
+    {{#hasManyResults}}
+        {{^hasNoResults}}
+            {{first}}-{{last}} out of        {{/hasNoResults}}
+        <strong>{{#helpers.formatNumber}}{{nbHits}}{{/helpers.formatNumber}} results found</strong>
+    {{/hasManyResults}}
+
+    in {{seconds}} seconds</script><!-- Refinements lists item template -->
+<script type="text/template" id="refinements-lists-item-template">
+    <label class="{{cssClasses.label}}">
+        <input type="checkbox" class="{{cssClasses.checkbox}}" value="{{name}}" {{#isRefined}}checked{{/isRefined}} />{{name}}
+        {{#isRefined}}<span class="cross-circle"></span>{{/isRefined}}
+        <span class="{{cssClasses.count}}">
+            {{#helpers.formatNumber}}{{count}}{{/helpers.formatNumber}}
+        </span>
+    </label>
+</script><!-- Current refinements template -->
+<script type="text/template" id="current-refinements-template">
+    <div class="cross-wrapper">
+        <span class="clear-cross clear-refinement"></span>
+    </div>
+    <div class="current-refinement-wrapper">
+        {{#label}}
+            <span class="current-refinement-label">{{label}}{{^operator}}:{{/operator}}</span>
+        {{/label}}
+
+        {{#operator}}
+            {{{displayOperator}}}
+        {{/operator}}
+
+        {{#exclude}}-{{/exclude}}
+
+        <span class="current-refinement-name">{{name}}</span>
+    </div>
+</script> </div>
+</div><nav class="vnav">
+    <a class="vnav-item vnav-item-vex" href="https://www.vexrobotics.com/" title="VEX Robotics"></a>
+    <a class="vnav-item vnav-item-iq" href="https://www.vexrobotics.com/vexiq" title="VEX IQ"></a>
+    <a class="vnav-item vnav-item-edr" href="https://www.vexrobotics.com/vexedr" title="VEX EDR"></a>
+    <a class="vnav-item vnav-item-pro" href="https://www.vexrobotics.com/vexpro" title="VEXpro"></a>
+    <a class="vnav-item vnav-item-twitter" href="https://twitter.com/vexrobotics" title="Follow VEX on Twitter"></a>
+    <a class="vnav-item vnav-item-instagram" href="https://instagram.com/vexrobotics" title="Follow VEX on Instagram"></a>
+    <a class="vnav-item vnav-item-youtube" href="https://www.youtube.com/user/vexroboticstv" title="Subscribe to VEX on YouTube"></a>
+    <a class="vnav-item vnav-item-facebook" href="https://www.facebook.com/vexrobotics" title="Like VEX on Facebook"></a>
+</nav>
+
+<script type="text/javascript" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/1.js.download" async=""></script>
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/widget_iframe.83d5793f6ebbe2046330abda6016ae93.html" style="display: none;"></iframe><div class="trustedsite-floating-element" style="z-index: 1000001; position: fixed; right: 0px; bottom: 0px; border-top-left-radius: 3px; margin: 0px !important; padding: 0px !important; border: 0px !important; max-width: none !important; max-height: none !important; width: 36px !important; height: 40px !important; background: rgb(255, 255, 255) !important; opacity: 0.7 !important;"></div><div class="trustedsite-floating-element" id="trustedsite-261432cb4fce4ed9a3050a7fe005791e-image" style="position: fixed; width: 100px; overflow: hidden; bottom: 0px; right: -56px; margin: 0px !important; padding: 0px !important; border: 0px !important; background: none !important; max-width: none !important; max-height: none !important; height: 40px !important; z-index: 1000003 !important; cursor: pointer !important;"><img src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/float2-right.png" width="100" height="40" style="margin:0 !important;padding:0 !important;border:0 !important;background:none !important;max-width:none !important;max-height:none !important;width:100px !important;height:40px !important;" alt="McAfee SECURE"></div><img id="trustedsite-261432cb4fce4ed9a3050a7fe005791e-image-bg" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/tm-float-bg-right-bottom.png" alt="McAfee SECURE" class="trustedsite-floating-element" style="width: 100px; right: -56px; margin: 0px !important; padding: 0px !important; border: 0px !important; background: none !important; max-width: none !important; max-height: none !important; position: fixed !important; height: 40px !important; z-index: 1000002 !important; bottom: 0px !important; display: none;"><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./Omni-Directional Wheels - Wheels &amp; Hubs - Motion - VEXpro - VEX Robotics_files/saved_resource.html"></iframe></body></html>

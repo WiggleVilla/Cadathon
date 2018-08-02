@@ -1,0 +1,260 @@
+
+<!-- saved from url=(0063)https://clara.io/player/v2/212f3dc2-05d3-4f6b-9080-decb1498a128 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>217-4775 · v2 · Clara.io</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+body {
+  margin: 0
+}
+    </style>
+  <style type="text/css">/*
+  This css gets imported and used with the player.
+
+  Do not edit CSS, edit `less` files and regenerate.
+*/
+.claraplayer {
+  /* Elements */
+}
+.claraplayer canvas {
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}
+.claraplayer canvas:focus {
+  outline: none;
+}
+.claraplayer input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 7px 0;
+}
+.claraplayer input[type=range]:focus {
+  outline: none;
+}
+.claraplayer input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(13, 13, 13, 0.3);
+  background: #ffffff;
+  border-radius: 2.6px;
+  border: 0px solid #000000;
+}
+.claraplayer input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 2.7px #000000, 0px 0px 0px #0d0d0d;
+  border: 2px solid #ffffff;
+  height: 18px;
+  width: 18px;
+  border-radius: 20px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+.claraplayer input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ffffff;
+}
+.claraplayer input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(13, 13, 13, 0.3);
+  background: #ffffff;
+  border-radius: 2.6px;
+  border: 0px solid #000000;
+}
+.claraplayer input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 2.7px #000000, 0px 0px 0px #0d0d0d;
+  border: 2px solid #ffffff;
+  height: 18px;
+  width: 18px;
+  border-radius: 20px;
+  background: #ffffff;
+  cursor: pointer;
+}
+.claraplayer input[type=range]::-ms-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.claraplayer input[type=range]::-ms-fill-lower {
+  background: #e3e3e3;
+  border: 0px solid #000000;
+  border-radius: 5.2px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(13, 13, 13, 0.3);
+}
+.claraplayer input[type=range]::-ms-fill-upper {
+  background: #ffffff;
+  border: 0px solid #000000;
+  border-radius: 5.2px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(13, 13, 13, 0.3);
+}
+.claraplayer input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 2.7px #000000, 0px 0px 0px #0d0d0d;
+  border: 2px solid #ffffff;
+  height: 18px;
+  width: 18px;
+  border-radius: 20px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 4px;
+}
+.claraplayer input[type=range]:focus::-ms-fill-lower {
+  background: #ffffff;
+}
+.claraplayer input[type=range]:focus::-ms-fill-upper {
+  background: #ffffff;
+}
+.claraplayer .annotation-text {
+  font-size: 12px;
+  padding: 10px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  opacity: 0.8;
+  cursor: pointer;
+  line-height: 1.3;
+  overflow: auto;
+}
+.claraplayer .annotation-text img {
+  max-width: 100%;
+}
+.claraplayer .annotation-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.claraplayer .annotation-closed {
+  background-image: url(/img/annotation-closed-2.svg);
+}
+.claraplayer .annotation-open {
+  background-image: url(/img/annotation-open-2.svg);
+}
+.claraplayer .annotation-left {
+  left: 30px;
+}
+.claraplayer .annotation-right {
+  right: 30px;
+}
+.claraplayer .annotation-top {
+  top: 0;
+}
+.claraplayer .annotation-bottom {
+  bottom: 0;
+}
+.claraplayer .annotation {
+  position: absolute;
+  text-align: left;
+  transition: opacity 0.3s ease-out;
+  font-family: sans-serif;
+}
+.claraplayer .annotation .arrow {
+  position: absolute;
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  height: 0;
+  width: 0;
+  margin-top: -5px;
+}
+.claraplayer .annotation .arrow-left {
+  left: -10px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid #333;
+}
+.claraplayer .annotation .arrow-right {
+  right: -10px;
+  border-right: 5px solid transparent;
+  border-left: 5px solid #333;
+}
+.claraplayer .annotation .arrow-top {
+  top: 12px;
+}
+.claraplayer .annotation .arrow-bottom {
+  bottom: 8px;
+}
+</style><script async="" src="./analytics.js.download"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-38840155-1', 'auto', 'playerv2');ga('playerv2.require', 'displayfeatures');ga('playerv2.send', 'pageview');</script></head>
+  <body>
+    <div id="container" style="position: absolute; height: 100%; width: 100%;">
+      <div class="claraplayer" style="position: relative; top: 0px; left: 0px; right: 0px; bottom: 0px; height: 100%; width: 100%; background-image: none; background-repeat: no-repeat; background-size: auto 100%; background-position: center center; box-sizing: border-box; background-color: transparent; overflow: hidden;"><div style="position: relative; display: block;"><canvas width="562" height="500" tabindex="1" style="width: 562px; height: 500px;"></canvas></div><span style="position: absolute; left: 5px; right: 5px; bottom: 5px; display: flex; flex-wrap: nowrap; height: 54px; pointer-events: none;"><style>
+div.claraplayer ul.tools li:not(.active):hover svg path {
+  fill: #C08618;
+}
+</style><ul class="tools" style="position: relative; bottom: 0px; left: 0px; list-style-type: none; padding: 0px 5px; margin: 0px; z-index: inherit;"><svg width="0" height="0"><filter id="glowfilter"><fegaussianblur in="SourceAlpha" stdDeviation="50" result="blur"></fegaussianblur><feoffset in="blur" dx="0" dy="0" result="offsetBlur"></feoffset><feflood flood-color="#000" flood-opacity="1" result="offsetColor"></feflood><fecomposite in="offsetColor" in2="offsetBlur" operator="in" result="offsetBlurComposed"></fecomposite><femerge><femergenode in="offsetBlurComposed"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter></svg><li class="active" title="Orbit" style="cursor: pointer; float: left; border-radius: 5px; padding: 5px; box-sizing: border-box; pointer-events: auto;"><svg viewBox="-300 -300 1624 1624" width="34" height="34" title="Orbit" style="padding: 0px; box-sizing: border-box;"><path fill="#ffc85f" filter="url(#glowfilter)" d="M1024 384h-384l143.53-143.53c-72.53-72.526-168.96-112.47-271.53-112.47s-199 39.944-271.53 112.47c-72.526 72.53-112.47 168.96-112.47 271.53s39.944 199 112.47 271.53c72.53 72.526 168.96 112.47 271.53 112.47s199-39.944 271.528-112.472c6.056-6.054 11.86-12.292 17.456-18.668l96.32 84.282c-93.846 107.166-231.664 174.858-385.304 174.858-282.77 0-512-229.23-512-512s229.23-512 512-512c141.386 0 269.368 57.326 362.016 149.984l149.984-149.984v384z"></path></svg></li><li title="Pan" style="cursor: pointer; float: left; border-radius: 5px; padding: 5px; box-sizing: border-box; pointer-events: auto;"><svg viewBox="-150 -150 812 812" width="34" height="34" title="Pan" style="padding: 0px; box-sizing: border-box;"><g transform="matrix(0.49680763,0.49680763,-0.49680763,0.49680763,255.01217,2.6223229)"><path fill="#fff" filter="url(#glowfilter)" d="M -0.49680099,-1.4900844 -0.49680795,206.9137 79.659562,126.75733 207.90699,255.00476 79.657586,383.25416 -0.49680795,303.09977 l 4.41e-6,208.40379 208.40379354,0 -80.15637,-80.15637 128.2494,-128.2494 c 43.4197,43.41971 90.25956,90.25956 128.2494,128.2494 l -80.15637,80.15637 208.4038,0 0,-208.40379 -80.1544,80.15439 -128.2494,-128.2494 c 42.74914,-42.74914 85.49828,-85.49828 128.24743,-128.24743 l 80.15637,80.15637 -10e-6,-208.4037813 -208.40379,-1e-5 80.1544,80.1543943 C 341.4983,121.41344 298.74916,164.16259 256.00002,206.91173 L 127.75259,78.664303 207.90699,-1.4900913 Z"></path></g></svg></li><li title="Zoom" style="cursor: pointer; float: left; border-radius: 5px; padding: 5px; box-sizing: border-box; pointer-events: auto;"><svg viewBox="-300 -300 1624 1624" width="34" height="34" title="Zoom" style="padding: 0px; box-sizing: border-box;"><path fill="#fff" filter="url(#glowfilter)" d="M992.262 871.396l-242.552-206.294c-25.074-22.566-51.89-32.926-73.552-31.926 57.256-67.068 91.842-154.078 91.842-249.176 0-212.078-171.922-384-384-384-212.076 0-384 171.922-384 384s171.922 384 384 384c95.098 0 182.108-34.586 249.176-91.844-1 21.662 9.36 48.478 31.926 73.552l206.294 242.552c35.322 39.246 93.022 42.554 128.22 7.356s31.892-92.898-7.354-128.22zM384 640c-141.384 0-256-114.616-256-256s114.616-256 256-256 256 114.616 256 256-114.614 256-256 256z"></path></svg></li><li title="Home" style="cursor: pointer; float: left; border-radius: 5px; padding: 5px; box-sizing: border-box; pointer-events: auto;"><svg viewBox="-300 -300 1624 1624" width="34" height="34" title="Home" style="padding: 0px; box-sizing: border-box;"><path fill="#fff" filter="url(#glowfilter)" d="M1024 608l-192-192v-288h-128v160l-192-192-512 512v32h128v320h320v-192h128v192h320v-320h128z"></path></svg></li><li style="cursor: pointer; float: left; border-radius: 5px; padding: 5px; box-sizing: border-box; pointer-events: auto;"><svg viewBox="-300 -300 1624 1624" width="34" height="34"><path fill="#fff" filter="url(#glowfilter)" d="M1024 0v416l-160-160-192 192-96-96 192-192-160-160zM448 672l-192 192 160 160h-416v-416l160 160 192-192z"></path></svg></li></ul></span></div>
+    <div></div></div>
+    <script>(function() {
+  // Let embed know we are loading the scene out of band.
+  window.claraPlayerExternal = {};
+
+  function reportError(msg) {
+    if (typeof player !== 'undefined') {
+      player.sceneIO.reportError(msg);
+    } else {
+      claraPlayerExternal.error = msg;
+    }
+  }
+
+  var sceneId = '212f3dc2-05d3-4f6b-9080-decb1498a128';
+
+  var startTime = new Date();
+  var LOAD_SLOW_THRESHOLD = 10000;
+  var LOAD_FAIL_THRESHOLD = 30000;
+
+  var slowLoadTimeout = setTimeout(function() {
+    if (typeof player !== 'undefined') {
+      player._store.error(new Error('Slow Load'), null, { sceneId: sceneId });
+    }
+  }, LOAD_SLOW_THRESHOLD);
+
+  var loadFailure = setTimeout(function() {
+    if (typeof player !== 'undefined') {
+      player._store.error(new Error('Load Failure'), null, {
+        sceneId: sceneId,
+      });
+    }
+  }, LOAD_FAIL_THRESHOLD);
+
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://cdn.threehub.com/resources/37ee9a60cf252d4407b7b419edc56c45', true);
+  xhr.responseType = 'text';
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState > 1) {
+      clearTimeout(slowLoadTimeout);
+      clearTimeout(loadFailure);
+    }
+  };
+  xhr.onload = function(response) {
+    if (xhr.status >= 200 && xhr.status < 400) {
+      if (typeof player !== 'undefined') {
+        player.sceneIO
+          .loadScene(sceneId, xhr.response, new Date() - startTime)
+          .then(function() {
+            player.sceneIO.useScene(sceneId);
+          });
+      } else {
+        claraPlayerExternal.content = xhr.response;
+      }
+    } else {
+      reportError(xhr.statusText || 'Error Loading Scene');
+    }
+  };
+
+  xhr.onerror = function(res) {
+    reportError('Error Loading Scene');
+  };
+
+  xhr.send();
+})();
+</script>
+    <script src="./claraplayer-2.3.52.min.js.download" type="text/javascript"></script>
+    <script>!function(n){function r(t){if(e[t])return e[t].exports;var o=e[t]={i:t,l:!1,exports:{}};return n[t].call(o.exports,o,o.exports,r),o.l=!0,o.exports}var e={};r.m=n,r.c=e,r.i=function(n){return n},r.d=function(n,e,t){r.o(n,e)||Object.defineProperty(n,e,{configurable:!1,enumerable:!0,get:t})},r.n=function(n){var e=n&&n.__esModule?function(){return n.default}:function(){return n};return r.d(e,"a",e),e},r.o=function(n,r){return Object.prototype.hasOwnProperty.call(n,r)},r.p="",r(r.s=0)}([function(n,r,e){"use strict";var t=window.location.pathname.split("/"),o=t[t.length-1],i=claraplayer("container");window.player=i,window.api=i,i.initializePlayer(o,{useQueryParams:!0})}]);</script>
+  
+
+</body></html>
